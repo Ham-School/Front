@@ -21,6 +21,7 @@
 	box-shadow: 0 0 5px rgba(0,0,0, 0.3);
 	border-radius: 5px;
 	float: left;
+	font-family: arial;
 }
 
 .resaltar{
@@ -31,4 +32,33 @@
 .resaltarc{
 	color: white;
 	background-color: green;
+}
+
+#lista1 {
+    font-family:Arial;
+    font-weight:bold;
+    font-size:13px;
+}
+.separador {
+    color:gray;
+}
+#lista1 li {
+     display:inline;
+     padding-left:3px;
+     padding-right:3px;
+    background-color:black;
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+a:hover {
+    color:black;
+    background-color:lightgray;
+}
+
+ul.navega li {
+        display: inline;
+        align-content: center;
+        font-family: arial;
 }
