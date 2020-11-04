@@ -7,12 +7,20 @@ $(document).ready(function(){
 		$(".head").removeClass('resaltar');
 	});
 
+	$(".head").click(function(){
+		$(".head").addClass('resaltarc');
+	});
+
 	$(".purple").hover(function(){
 		$(".purple").addClass('resaltar');
 	});
 
 	$(".purple").mouseleave(function(){
 		$(".purple").removeClass('resaltar');
+	});
+
+	$(".purple").click(function(){
+		$(".purple").addClass('resaltarc');
 	});
 
 	$(".black").hover(function(){
@@ -23,12 +31,20 @@ $(document).ready(function(){
 		$(".black").removeClass('resaltar');
 	});
 
+	$(".black").click(function(){
+		$(".black").addClass('resaltarc');
+	});
+
 	$(".pink").hover(function(){
 		$(".pink").addClass('resaltar');
 	});
 
 	$(".pink").mouseleave(function(){
 		$(".pink").removeClass('resaltar');
+	});
+
+	$(".pink").click(function(){
+		$(".pink").addClass('resaltarc');
 	});
 
 	$(".arm").hover(function(){
@@ -39,12 +55,20 @@ $(document).ready(function(){
 		$(".arm").removeClass('resaltar');
 	});
 
+	$(".arm").click(function(){
+		$(".arm").addClass('resaltarc');
+	});
+
 	$(".orange").hover(function(){
 		$(".orange").addClass('resaltar');
 	});
 
 	$(".orange").mouseleave(function(){
 		$(".orange").removeClass('resaltar');	
+	});
+
+	$(".orange").click(function(){
+		$(".orange").addClass('resaltarc');
 	});
 
 	$(".toes").hover(function(){
@@ -55,12 +79,20 @@ $(document).ready(function(){
 		$(".toes").removeClass('resaltar');
 	});
 
+	$(".toes").click(function(){
+		$(".toes").addClass('resaltarc');
+	});
+
 	$(".wh").hover(function(){
 		$(".wh").addClass('resaltar');
 	});
 
 	$(".wh").mouseleave(function(){
 		$(".wh").removeClass('resaltar');
+	});
+
+	$(".wh").click(function(){
+		$(".wh").addClass('resaltarc');
 	});
 
 	$(".blue").hover(function(){
@@ -71,6 +103,10 @@ $(document).ready(function(){
 		$(".blue").removeClass('resaltar');
 	});
 
+	$(".blue").click(function(){
+		$(".blue").addClass('resaltarc');
+	});
+
 	$(".sho").hover(function(){
 		$(".sho").addClass('resaltar');
 	});
@@ -79,4 +115,7 @@ $(document).ready(function(){
 		$(".sho").removeClass('resaltar');
 	});
 
+	$(".sho").click(function(){
+		$(".sho").addClass('resaltarc');
+	});
 });
