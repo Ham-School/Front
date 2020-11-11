@@ -7,3 +7,12 @@
 	body{
 		font-family: 'Roboto', sans-serif;
 	}
+
+	.ham_navbar{
+		background-color: rgba(255, 255, 255, 0.7) !important;
+	}
+
+	.ham_navbar div, .ham_navbar ul{
+		background-color: transparent !important;
+
+	}
