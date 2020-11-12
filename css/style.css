@@ -33,3 +33,19 @@
 	.ham_cont_sec_1_link hr{
 		border-top: 1px solid rgba(1,1,1,0.3);
 	} 
+
+	.ham_cont_footer{
+		background-color: rgba(1,1,1,0.7);
+		padding: 1%;
+		color: #fff;
+	}
+
+	.ham_cont_footer a{
+		color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+
+	.ham_cont_img_footer{
+		padding: 5%;
+	}
