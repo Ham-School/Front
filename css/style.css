@@ -5,7 +5,13 @@
 	}
 
 	body{
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Patrick Hand', cursive;
+		font-size: 20px;
+	}
+
+	.ham-font-nav{
+		font-family: 'Patrick Hand', cursive;
+		font-size: 30px;
 	}
 
 	.ham_navbar{
