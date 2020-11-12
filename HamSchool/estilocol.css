@@ -8,10 +8,10 @@ body {
 
 .animation{
    position: absolute;
-   top:50%
+    top:50%
    left: 50%;
-   margin-top: -0px;
-   margin-left: -0px;
+   margin-top: 50px;
+   margin-left: -90px;
 
    animation-name: arcoiris;
    animation-duration: .8s;
