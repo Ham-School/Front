@@ -32,6 +32,11 @@
 		padding: 5%;
 	}
 
+	.ham_cont_sec_1_link img{
+		width: 200px;
+		height: 100px;
+	}
+
 	.ham_cont_sec_1_link a{
 		width: 200px;
 	} 
