@@ -17,16 +17,16 @@
       function initPayPalButton() {
         paypal.Buttons({
           style: {
-            shape: 'rect',
-            color: 'silver',
+            shape: 'pill',
+            color: 'gold',
             layout: 'vertical',
-            label: 'paypal',
+            label: 'pay',
             
           },
   
           createOrder: function(data, actions) {
             return actions.order.create({
-              purchase_units: [{"description":"Pago de curso.","amount":{"currency_code":"USD","value":5}}]
+              purchase_units: [{"description":"Pago de curso.","amount":{"currency_code":"USD","value":1}}]
             });
           },
   
@@ -42,6 +42,6 @@
         }).render('#paypal-button-container');
       }
       initPayPalButton();
-    </script>  
+    </script>
 </body>
 </html>
