@@ -6,7 +6,7 @@ body {
 
 }
 
-.animation{
+.img-fluid {
    position: absolute;
     top:50%
    left: 50%;
