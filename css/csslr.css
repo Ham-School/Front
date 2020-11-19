@@ -1,6 +1,9 @@
 html {
     background: #363636;
 }
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+}
 
 .menu {
   display: flex;
