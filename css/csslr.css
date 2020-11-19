@@ -1,5 +1,5 @@
 html {
-    background: #de6100;
+    background: #363636;
 }
 
 .menu {
@@ -31,7 +31,7 @@ a.iniciar, a.registrar {
   display:inline-block;
   padding: 4%;
   margin: 20 px 8px 10px 8px; 
-  color: #de6100;
+  color: #000000;
 }
 
 a.contraseña{
@@ -47,7 +47,7 @@ a.recu{
 }
 
 input[type=button], input[type=submit], input[type=reset]  {
-  background-color: #de6100;
+  background-color: #363636;
   color: white;
   padding: 15px 80px;
   display: inline-block;
@@ -57,7 +57,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-  background: #b34e00;
+  background: #1f1f1f;
 }
 
 input[type=text] {
