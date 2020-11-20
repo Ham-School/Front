@@ -8,12 +8,12 @@ new Vue({
     data: () => ({
         // La ruta de las imágenes. Puede ser relativa o absoluta
         imagenes: [
-            "./img/cabra.jpg",
-            "./img/conejo.jpg",
-            "./img/leon.jpg",
-            "./img/oveja.jpg",
-            "./img/perro.jpg",
-            "./img/gato.jpg",
+            "./img/blue.jpg",
+            "./img/red.jpg",
+            "./img/yell.jpg",
+            "./img/eyes.png",
+            "./img/head.png",
+            "./img/toes.jpg",
         ],
         memorama: [],
         // Útiles para saber cuál fue la carta anteriormente seleccionada
