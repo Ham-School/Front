@@ -5,14 +5,11 @@
 	}
 
 	body{
-		font-family: 'Patrick Hand', cursive;
+		font-family: 'Barlow Condensed', sans-serif;
 		font-size: 20px;
 	}
 
-	.ham-font-nav{
-		font-family: 'Patrick Hand', cursive;
-		font-size: 30px;
-	}
+	
 
 	.ham_navbar{
 		background-color: rgba(255, 255, 255, 0.7) !important;
@@ -24,12 +21,17 @@
 	}
 
 	.ham_cont_sec_1{
-		padding: 10%;
+		padding: 5%;
 
 	}
 
 	.ham_cont_sec_1_link{
 		padding: 5%;
+	}
+
+	.ham_cont_sec_1_link img{
+		width: 200px;
+		height: 100px;
 	}
 
 	.ham_cont_sec_1_link a{
