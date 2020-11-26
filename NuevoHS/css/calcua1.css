@@ -6,9 +6,19 @@
 	padding:30px;
 	background: pink;
 	width: 350px;
-	height:500px;
+	height:550px;
 	border-radius: 25px;
 }
+
+.calculadora2 td button{
+	display: block;
+	margin-bottom: 20px;
+	
+
+	
+}
+
+
 .calculadora td button{
 	display: block;
 	margin-bottom: 20px;
