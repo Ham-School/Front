@@ -33,7 +33,7 @@
         <a style="color: black;" target="_blank" href="https://www.instagram.com/ham.school/"><i style="color: black; font-size: 25px" class="icon-instagram"></i>Instagram</a>
       </li>
       <li class="nav-item">
-        <a style="color: black;" target="_blank" href=""><i style="color: black; font-size: 25px" class="icon-twitter"></i>Twitter</a>
+        <a style="color: black;" target="_blank" href="https://mobile.twitter.com/HamSchool1"><i style="color: black; font-size: 25px" class="icon-twitter"></i>Twitter</a>
       </li>
     </ul>
   </div>
@@ -41,46 +41,32 @@
 </header>
 
 <section>
-  <div class="ham_cont_banner">
-    <div class="ham_sombra">
+  <div class="ham_cont_banner ">
+    <div class="ham_sombra" >
       <img style="width: 500px; height: 200px;" class="img-fluid" alt="clase online" src="{% static 'main/img/hamschool3.png' %}">
-      <table>
-        <tr>
-            <th>Username</th>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Email</th>
-        </tr>
+      <table class="table table-hover" style="color:black ; background-color: white; margin-top: 20px; ">
+        
+        <thead>
+            <td>Username</td>
+            <td>First name</td>
+            <td>Last name</td>
+            <td>Email</td>
+        </thead>
 
         {% for p in usuarios %}
-        <tr>
+        <tbody>
+            
                 <td>{{p.username}}</td>
-                <td>{{p.first_name}}</td>
-                <td>{{p.last_name}}</td>
-                <td>{{p.email}}</td>
-        </tr>
+                <td>{{p.nombres}}</td>
+                <td>{{p.apellidos}}</td>
+                <td>{{p.correo}}</td>
+        </tbody>
         {% endfor %}
+    
     </table>
       </div>
     </div>
   </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="row ham_cont_sec_1">
-      <div class="col-md-9" style="font-size: 23px">
-        <h2><b>About Ham-School</b></h2>
-        <p><i>The best english option</i></p>
-        <hr/>
-        <p>This project consists of teaching interactive English courses to primary and secondary school children through a digital medium, with the purpose of helping their learning and orienting them to better learning.</p>
-      </div>
-      <div class="ham_cont_sec_1_link col-md-3 text-center">
-        <img src="{% static 'main/img/hamschool4.png' %}">
-      </div>
-    </div>
-  </div>
-</section>
 
 <footer class="ham_cont_footer">
   <div>
@@ -92,4 +78,4 @@
 <script src="{% static 'main/ext/bootstrap/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'main/js/index.js' %}"></script>
 </body>
-</html>
+</html> 

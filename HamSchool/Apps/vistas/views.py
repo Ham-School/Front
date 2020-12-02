@@ -3,6 +3,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 from .forms import CustomCreationForm 
 from django.contrib.auth.models import User
+from .models import Usuario
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
 
@@ -126,7 +127,7 @@ def register_request (request):
 
 
 def lista_usuarios(request):
-    usuarios = User.objects.all()
+    usuarios = Usuario.objects.all()
     
     data = {
             'usuarios': usuarios
