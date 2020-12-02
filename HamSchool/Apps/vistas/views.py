@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout, authenticate
 from .forms import CustomCreationForm 
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib import messages
 
@@ -124,3 +125,10 @@ def register_request (request):
     return render(request, "vistas/Login/register.html", data) 
 
 
+def lista_usuarios(request):
+    usuarios = User.objects.all()
+    
+    data = {
+            'usuarios': usuarios
+    }
+    return render(request, "vistas/Lista.html", data)

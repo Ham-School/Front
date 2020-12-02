@@ -85,6 +85,8 @@ urlpatterns = [
     path('paypals', views.paypals, name="paypalprimaria"),
     path('paypalp', views.paypalp, name="paypalsecundaria"),
 
+    path('lista', views.lista_usuarios, name="lista"),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
