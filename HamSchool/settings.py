@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import dj_database_url 
 from decouple import config
-
+from django.conf import settings
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,7 +30,15 @@ STATICFILES_DIRS = (
 SECRET_KEY = '&ka+p46a5cn&+h=f$l!)oei7_^av#)gl*qm*631bs98x6uou3@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+
 DEBUG = True
+TEMPLATE_DEBUG = True
+DATABASES = settings.DATABASES
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 ALLOWED_HOSTS = ['*']
 
