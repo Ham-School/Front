@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import dj_database_url 
+from decouple import config
 
 import os
 
@@ -30,7 +32,7 @@ SECRET_KEY = '&ka+p46a5cn&+h=f$l!)oei7_^av#)gl*qm*631bs98x6uou3@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 LOGIN_REDIRECT_URL = 'index'
 LOGOUT_REDIRECT_URL = 'accounts/login/'
@@ -51,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -83,12 +86,25 @@ WSGI_APPLICATION = 'HamSchool.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'HamSchool.db',
+
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'HamSchool.db',
+        }
     }
-}
+else:
+    import dj_database_url 
+    from decouple import config
+
+    DATABASES = {
+        'default':{
+            dj_database_url.config(
+                default=config('DATABASE_URL')
+            )
+        }
+    }
 
 
 # Password validation
@@ -128,7 +144,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'statifiles'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
