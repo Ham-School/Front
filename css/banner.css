@@ -1,5 +1,5 @@
 .ham_cont_banner{
-	height: 100vh;
+	height: 80vh;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -110,4 +110,8 @@
 
 .ham_cont_img{
 	padding: 5%;
+}
+
+.tabla{
+	margin: 0 auto;
 }
